@@ -1,0 +1,54 @@
+﻿@model BasicECommerce.Model.CategoryViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-4">
+    <div class="row p-3">
+        <div class="col-6">
+            <h2 class="text-primary">List of Categories</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a class="btn btn-primary" asp-controller="Category" asp-action="AddOrEdit"> <i class="bi bi-plus-circle"></i> Add New Category</a>
+        </div>
+    </div>
+</div>
+
+
+<p>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.CreatedBy)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.categories) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DisplayOrder)
+                </td>
+                <td role="group">
+                    <a asp-controller="category" asp-action="AddOrEdit" asp-route-id="@item.Id">
+                        <i class="bi bi-pencil-square"></i>
+                    </a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-controller="category" asp-action="Delete" asp-route-id="@item.Id">
+                        <i class="bi bi-trash"></i>
+                    </a> 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,4 @@
+<div class="">
+    <input #searchInput type="text" placeholder="Search KFC Meal 🤤" [value]="searchItem" [(ngModel)]="searchItem" (keyup.enter)="search(searchInput.value)">
+    <button (click)="search(searchInput.value)" >Search</button>
+</div>

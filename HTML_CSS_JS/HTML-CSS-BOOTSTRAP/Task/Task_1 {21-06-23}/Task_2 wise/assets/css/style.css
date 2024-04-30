@@ -1,0 +1,438 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  text-decoration: none;
+}
+.tages a{
+  text-decoration: none;
+  color: #1F1F41;
+  background-color: white;
+  padding: 5px;
+  padding-top: 5px;
+}
+
+.btn {
+  background-color: #00c64d;
+  color: white;
+  font-weight: 600;
+  border: #f1f1f1;
+}
+
+.fix {
+  position: fi;
+}
+
+@media only screen and (max-width: 600px) {
+  .myNavbar {
+    float: right;
+    margin-left: 30px;
+  }
+}
+
+.myNavbar {
+  word-spacing: 20px;
+  position: fixed;
+
+}
+.dropdown-item{
+  width: max-content;
+}
+
+.home-pic {
+  background-color: #f9fafb;
+  padding: 100px;
+}
+
+.head-title h1 {
+  font-size: 50px;
+  font-weight: bolder
+}
+
+.head-title p {
+  font-size: 20px;
+}
+
+.head-title button {
+  page-break-inside: auto;
+  padding-inline-start: 5%;
+  padding-inline: 10px;
+  font-size: 20px;
+}
+
+.head-image img {
+  width: 110%;
+}
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+}
+
+.log a {
+  color: #1F1F41;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.shop img {
+  width: 150%;
+}
+
+.mailer_boxes img {
+  border-radius: 10px;
+  width: 120%;
+}
+
+.ipsum_text {
+  font-size: 15px;
+}
+
+.third_section {
+  padding-top: 150px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+
+  border: none;
+
+
+}
+
+.range h1 {
+  font-weight: 400;
+  padding-top: 100px;
+}
+
+.Mailer_Boxes a {
+  color: #00c64d;
+}
+
+.Mailer_Boxes h6 {
+  font-weight: 600;
+}
+
+.range_single h2 {
+  font-weight: 400;
+  padding-top: 100px;
+  font-size: 35px;
+}
+
+.collapsible {
+  background-color: #ffff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  border: none;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.dropdown-icon {
+  float: right;
+  color: #cecdcd;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #ffff;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 2;
+  width: 97%;
+  background-color: rgba(231, 226, 226, 0.5);
+  color: #0d0c0c;
+  font-weight: 600;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+
+}
+
+.image-overlay p {
+  font-weight: 300;
+}
+
+.image-container:hover .image-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+.image-container img {
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.image-container:hover {
+  border-radius: 15px;
+}
+
+.image-container {
+  padding: 5px;
+}
+
+.section_fourth {
+  background-color: #f9fafb;
+  padding-bottom: 70px;
+  margin-top: 30xpx;
+}
+
+.ATHLETE_BOX {
+  border-radius: 10px;
+}
+
+.stars {
+  color: #fb923c;
+
+}
+
+.ATHLETE_BOX h6 {
+  font-weight: 700;
+}
+
+.Sustainable h1 {
+  font-weight: 400;
+}
+
+.second-last-section {
+  background-color: #f9fafb;
+  margin-top: 50px;
+  padding: 150px;
+}
+
+.last-btn {
+  display: inline-flex;
+
+}
+
+.last-btn1 {
+  margin-left: 10px;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.last-btn1:hover {
+  background-color: #d7d7dc;
+}
+
+.foot {
+
+  background-color: #374151;
+  color: #f1f1f1;
+
+
+}
+
+.last-list li a {
+  text-decoration: none;
+
+  color: #f1f1f1;
+}
+
+.last-list ul li {
+  list-style: none;
+  font-size: small;
+}
+
+.fot {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.last-list {
+  padding-top: 20px;
+}
+
+.last-list li a:hover {
+  color: #00c64d;
+}
+
+.icons i {
+  padding-right: 25px;
+
+}
+
+.icons {
+  text-align: center;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+/* ///////////////////////////////////////////////Explore our produci//////////////////////////////////////////////////////////////////////// */
+.Explore-section-first {
+  background-color: #F9FAFB;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.Explore-section-Packaging-Solutions {
+  padding-top: 100px;
+  font-weight: lighter;
+  padding-bottom: 100px;
+}
+
+.Explore-section-perfect-packaging input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-right: 200px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.Explore-section-perfect-packaging a {
+  text-decoration: none;
+  color: #0d0c0c;
+
+
+  text-align: right;
+  float: right;
+}
+
+.Explore-section-Mailer_Boxes {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.Explore-section-Mailer_Boxes span {
+  color: #00c64d;
+}
+
+.Explore-section-fourth-section {
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.7)), url(../images/packmojo_sample_kit_mailer_box_with_custom_box_inserts_6d94e071eb.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+/* ///////////////////////////////////////////////////////Corrugated Mailer Boxes////////////////////////////////////////////////////// */
+.CorrugatedMailerBoxes-first{
+  float: right;
+  padding-top: 5px;
+}
+.Explore-section-Packaging-Solution{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.CorrugatedMailerBoxes-pic img{
+  border-radius: 10px;
+}
+.CorrugatedMailerBoxes-btn{
+  padding-bottom: 100px;
+}
+.CorrugatedMailerBoxes-third-section{
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.7)), url(../images/CorrugatedMailerBoxes/beams_coffee_mailer_box_coffee_capsules_a835643dc2.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.CorrugatedMailerBoxes-fivth{
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.7)), url(../images/CorrugatedMailerBoxes/untold_custom_printed_mailer_boxes_aea6c1288c.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.miller img{
+  border-radius: 10px;
+  
+}
+.miller{
+  padding-bottom: 50px;
+}
+.CorrugatedMailerBoxes-sixth-section{
+  background-color: #F9FAFB;
+  padding-bottom: 100px;
+}
+.CorrugatedMailerBoxes-Corrugation span{
+  font-size: 40px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.CorrugatedMailerBoxes-Corrugation i{
+  font-size: 20px;
+  padding-top: -10px;
+}
+.Corrugation{
+  color: #00c64d;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.findindCortonBoxes-third-section{
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.7)), url(../images/CorrugatedMailerBoxes/pinta_beauty_custom_folding_carton_box_nail_polish_11de4a11cd.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.b{
+  color: #00c64d;
+  text-align: left;
+}
+.scroll-image img{
+  padding-top: 10px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.scroll-image{
+  padding-bottom: 50px;
+}

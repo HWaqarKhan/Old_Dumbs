@@ -1,0 +1,21 @@
+#logo {
+    font-family: "Product Sans", Arial, sans-serif;
+    color: #4285f4;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.div1 {
+    height: 60px;
+    width: 140px;
+    background-color: black;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+li {
+    padding-bottom: 10px;
+    text-decoration-line: none;
+    text-decoration: none;
+}

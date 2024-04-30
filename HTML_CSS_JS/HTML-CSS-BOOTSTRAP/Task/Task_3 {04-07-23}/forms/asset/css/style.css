@@ -1,0 +1,457 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* #region Form 1 */
+
+.t3 {
+    height: 577px;
+    padding-left: 250px;
+    padding-top: 40px;
+    background-color: #3A3B50;
+}
+
+.t3 .table-div {
+    height: 550px;
+    width: 800px;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    background-color: #515578;
+}
+
+.t3 .th-div{
+    display: inline-block;
+    height: 25px;
+    padding: 20px 40px 5px 40px;
+    border-left: 2px solid black;
+}
+.t3 .th-div p{
+    color: black;
+    text-align: center;
+}
+
+.t3 form{
+    margin: 20px 40px 40px 40px;
+}
+
+.t3 form input, select{
+    height: 30px;
+    margin-top: 10px;
+}
+
+.t3 form label,p{
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: -2px;
+}
+
+.t3 .first-name{
+    display: inline-block;
+}
+.t3 .first-name input{
+    width: 250px;
+}
+
+.t3 .last-name{
+    display: inline-block;
+    margin-left: 50px;
+}
+.t3 .last-name input{
+    width: 250px;
+}
+
+.t3 .s-input{
+    height: 40px;
+    width: 80px;
+    text-align: center;
+}
+
+.t3 .btn{
+    border: none; 
+    font-size: 20px; 
+    text-align: center; 
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50px; 
+    color: white; 
+    background-color: green;
+    margin: 60px 0 0 675px;
+    position: relative;
+}
+
+.t3 .fa-angle-right{
+    margin: 72px 0 0 -24px;
+}
+
+
+form .fa-location-dot {
+    color: #1F1F1F;
+    margin: 18px 0 0 -24px;
+}
+/* #endregion Form 1 */
+
+
+/* #region Form 2 */
+
+.t5 {
+    height: 577px;
+    padding-left: 250px;
+    padding-top: 40px;
+    background-color: #4071F4;
+}
+
+.t5 .table-div {
+    height: 550px;
+    width: 800px;
+    margin: 0;
+    padding: 10px 0px 10px 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.t5 h1{
+    margin: 0 0 30px 0;
+}
+
+.t5 h3{
+    color: #666666;
+}
+
+.t5 input{
+    margin: 10px 20px 15px 0;
+    height: 30px;
+    width: 233px;
+}
+
+.t5 label{
+    font-weight: bold;
+}
+
+.t5 .btn{
+    background-color: #3D71F9;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-right: 40px;
+}
+
+.fa-solid{
+    position: absolute;
+    margin: 22px 0 0 -120px;
+    color: white;
+}
+/* #endregion Form 2 */
+
+/* #region  Form 3 */
+
+.t6 {
+    height: 577px;
+    padding-left: 435px;
+    font-family: sans-serif;
+    background-color: #bdbdbd;
+}
+
+.t6 .table-div {
+    height: 100%;
+    width: 400px;
+    margin: 0;
+    padding-left: 25px;
+    background-color: #000000;
+}
+
+.t6 .new-div{
+    height: 557px;
+    width: 350px;
+    padding: 10px 15px 10px 15px;
+    background-color: #eeeeee;
+}
+
+.t6 .form-div{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.t6 h1{
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.t6 .name{
+    margin: 40px 0 20px 30px;
+    height: 20px;
+    width: 280px;
+    border: none;
+    border-bottom: 3px black solid;
+    border-radius: 5px;
+}
+.t6 .name input,.pass input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-left: 40px; 
+    width: 225px;
+}
+
+.t6 .pass{
+    margin: 0 0 0 30px;
+    height: 20px;
+    width: 280px;
+    border-bottom: 3px black solid;
+    border-radius: 5px;
+}
+
+
+.t6 .btn{
+    background-color: #3d98e8;
+    font-size: 18px;
+    margin: 0px 0 0 130px;
+    height: 35px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.t6 .log-with{
+    margin: 20px 20px 0 50px;
+    display: inline-block;
+}
+
+.t6 .log-with-div{
+    position: relative;
+    display: inline-block;
+    margin-bottom: -5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #000000;
+}
+
+.t6 .anc{
+    margin-right: 10px;
+    text-decoration: none;
+}
+/* #endregion Form 3 */
+
+/* #region Form 4 */
+
+.t7 {
+    height: 577px;
+    padding-left: 450px;
+    font-family: sans-serif;
+    background-color: #bdbdbd;
+}
+
+.t7 .table-div {
+    height: 100%;
+    width: 400px;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.t7 h1{
+    margin: 20px 0 10px 30px;
+}
+
+.t7 input{
+    margin: 30px 0 30px 30px;
+    width: 330px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 2px solid grey;
+}
+
+.t7 select{
+    margin: 30px 0 30px 30px;
+    width: 330px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 2px solid grey;
+}
+
+.t7 .btn{
+    background-color: #53B142;
+    font-size: 18px;
+    margin: 30px 0 0 30px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+/* #endregion Form 4 */
+
+/* #region  Form 5 */
+
+.t8 {
+    height: 577px;
+    padding-left: 435px;
+    font-family: sans-serif;
+    background-color: #bdbdbd;
+}
+
+.t8 .table-div {
+    height: 100%;
+    width: 400px;
+    margin: 0;
+    padding-left: 45px;
+    background-color: #000000;
+}
+
+.t8 .new-div{
+    height: 567px;
+    width: 350px;
+    padding-top: 10px;
+    background-image: linear-gradient(to right, #BB3678, #723F7A);
+}
+
+.t8 .form-div{
+    height: 527px;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-radius: 15px 15px 0 0;
+    background-color: white;
+}
+
+.t8 h2{
+    margin: 20px 0 20px 30px;
+}
+
+.t8 label{
+    margin-left: 30px;
+}
+.t8 input{
+    margin: 3px 0 11px 30px;
+    width: 280px;
+    height: 23px;
+    border: none;
+    outline: none;
+    background-color: #f1eeee;
+}
+.t8 select{
+    margin: 3px 0 15px 30px;
+    height: 28px;
+    width: 288px;
+    border: none;
+    outline: none;
+    background-color: #f1eeee;
+}
+
+.t8 .btn{
+    background-color: #4471D8;
+    font-size: 18px;
+    margin: 10px 0 0 30px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+/* #endregion Form 5 */
+
+/* #region Form 6 */
+
+.t9 {
+    height: 577px;
+    padding-left: 435px;
+    font-family: sans-serif;
+    background-color: #bdbdbd;
+}
+
+.t9 .table-div {
+    height: 100%;
+    width: 400px;
+    margin: 0;
+    padding-left: 25px;
+    background-color: #000000;
+}
+
+.t9 .new-div{
+    height: 557px;
+    width: 350px;
+    padding: 10px 15px 10px 15px;
+    background-color: #eeeeee;
+}
+
+.t9 .form-div{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.t9 h1{
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.t9 .name{
+    margin: 40px 0 0px 30px;
+    height: 20px;
+    width: 280px;
+    border: none;
+    border-bottom: 3px black solid;
+    border-radius: 5px;
+}
+.t9 .name input,.pass input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-left: 40px; 
+    width: 225px;
+}
+
+.t9 .pass{
+    margin: 0 0 0 30px;
+    height: 20px;
+    width: 280px;
+    border-bottom: 3px black solid;
+    border-radius: 5px;
+}
+
+
+.t9 .btn{
+    background-color: #3d98e8;
+    font-size: 18px;
+    margin: 0px 0 0 130px;
+    height: 35px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.t9 .log-with{
+    margin: 20px 20px 0 50px;
+    display: inline-block;
+}
+
+.t9 .log-with-div{
+    position: relative;
+    display: inline-block;
+    margin-bottom: -5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #000000;
+}
+
+.t9 .anc{
+    margin-right: 10px;
+    text-decoration: none;
+}
+/* #endregion Form 6 */

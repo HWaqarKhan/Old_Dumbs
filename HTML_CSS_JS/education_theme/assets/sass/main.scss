@@ -1,0 +1,15 @@
+@import "./utilities/variables";
+@import "./base";
+@import "./components/navbar";
+@import "./components/header";
+@import "./components/footer";
+
+@import "./pages/index/categories";
+@import "./pages/index/courses";
+@import "./pages/index/faqs";
+@import "./pages/index/testimonials";
+
+@import "./pages/about/achievements";
+@import "./pages/about/team";
+
+@import "./pages/contact/contact";

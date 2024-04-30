@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To AniList Client </h1>
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <a asp-action="AuthAniList" title="Anilist Login" class="me-2">AniList Login</a>
+    <a asp-action="Authenticate" title="Anilist Login" class="me-2">Authenticate</a>*@
+</div>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3 mt-3">
+        <div class="card">
+            <div class="card-header">AniList Authentication</div>
+            <div class="card-body primary">
+                <form asp-action="Authenticate" method="post">
+                    <div class="form-group text-center">
+                        <input type="submit" value="Authenticate" name="Login" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

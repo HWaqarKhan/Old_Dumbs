@@ -1,0 +1,34 @@
+.courses {
+    margin-top: 10rem;
+    .course {
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+
+            @media screen and (max-width: 1024px) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @media screen and (max-width: 600px) {
+                grid-template-columns: 1fr;
+            }
+        }
+        &__card {
+            background-color: $bg-secondary-color;
+            text-align: center;
+            border: 1px solid transparent;
+            transition: $transition;
+            &:hover {
+                background-color: transparent;
+                border: 1px solid $primary-color;
+            }
+        }
+        &__info {
+            padding: 2rem;
+            p {
+                margin: 1.2rem 0 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace dtox.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    @*<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="dtox.styles.css" rel="stylesheet" />*@
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/dtox/plugins/bootstrap/bootstrap.min.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="~/dtox/plugins/themify-icons/themify-icons.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="~/dtox/plugins/slick/slick.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="~/dtox/plugins/Venobox/venobox.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="~/dtox/plugins/aos/aos.css">
+
+    <!-- Main Stylesheet -->
+    <link href="~/dtox/css/style.css" rel="stylesheet">
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+</head>
+<body>
+    @RenderBody()
+    <!-- footer -->
+<footer class="footer-section footer" style="background-image: url(/dtox/images/backgrounds/footer-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <!-- logo -->
+        <a href="index.html">
+          <img class="img-fluid" src="/dtox/images/logo.png" alt="logo">
+        </a>
+      </div>
+      <!-- footer menu -->
+      <nav class="col-lg-8 align-self-center mb-5">
+        <ul class="list-inline text-lg-right text-center footer-menu">
+          <li class="list-inline-item active"><a href="index.html">Home</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="#feature">Feature</a></li>
+          <li class="list-inline-item"><a href="about.html">About</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="#team">Team</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
+          <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- footer social icon -->
+      <nav class="col-12">
+        <ul class="list-inline text-lg-right text-center social-icon">
+          <li class="list-inline-item">
+            <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="black" href="#"><i class="ti-github"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+    @*<script src="_framework/blazor.server.js"></script>*@
+    <!-- jQuery -->
+    <script src="~/dtox/plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/dtox/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="~/dtox/plugins/slick/slick.min.js"></script>
+    <!-- venobox -->
+    <script src="~/dtox/plugins/Venobox/venobox.min.js"></script>
+    <!-- aos -->
+    <script src="~/dtox/plugins/aos/aos.js"></script>
+    <!-- Main Script -->
+    <script src="~/dtox/js/script.js"></script>
+</body>
+</html>

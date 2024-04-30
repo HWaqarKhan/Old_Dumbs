@@ -1,0 +1,151 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tasks": [
+    {
+      "text": "Task Title ",
+      "day": "Time ",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Task Add",
+      "day": "9",
+      "reminder": true,
+      "id": 2
+    }
+  ],
+  "ContactManager": [
+    {
+      "id": 1,
+      "name": "john doe",
+      "email": "john@gmail.com",
+      "number": [
+        {
+          "id": 1,
+          "Type": "Mobile",
+          "number": "030739682441"
+        },
+        {
+          "id": 2,
+          "Type": "ph",
+          "number": "042739682441"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rock ",
+      "email": "rock@gmail.com",
+      "number": [
+        {
+          "id": 1,
+          "Type": "Mobile",
+          "number": "030739682441"
+        },
+        {
+          "id": 2,
+          "Type": "ph",
+          "number": "042739682441"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Demo Contact ",
+      "email": "rock@gmail.com",
+      "number": [
+        {
+          "id": 1,
+          "Type": "Mobile",
+          "number": "030739682441"
+        },
+        {
+          "id": 2,
+          "Type": "ph",
+          "number": "042739682441"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dumb",
+      "email": "dumbbamdam@gmail.com",
+      "number": [
+        {
+          "id": 1,
+          "Type": "ph",
+          "number": "12345678"
+        },
+        {
+          "id": 2,
+          "Type": "WORK",
+          "number": "12345678"
+        }
+      ]
+    },
+    {
+      "name": "fuckup dude",
+      "email": "demo@gmail.com",
+      "number": [
+        {
+          "id": 1,
+          "Type": "ph",
+          "number": "12345678"
+        },
+        {
+          "id": 2,
+          "Type": "WORK",
+          "number": "12345678"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Waqar Khan",
+      "email": "hafizwaqarkhan786@gmail.com",
+      "number": [
+        {
+          "number": "03356729366"
+        },
+        {
+          "number": "03074525114"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": [
+        "1223343",
+        "13456789"
+      ],
+      "id": 9
+    },
+    {
+      "name": "",
+      "email": "",
+      "number": [
+        "1223343",
+        "13456789"
+      ],
+      "id": 10
+    }
+  ]
+}

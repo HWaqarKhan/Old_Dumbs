@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState == 'complete'){
+                document.getElementById('addBtn').onclick= addRow;
+                var data = [
+                { firstName: "John", lastName: "doe" },
+                { firstName: "John", lastName: "Sina" },
+                { firstName: "Obito", lastName: "Uchiha" },
+                { firstName: "Mark", lastName: "zukerburg" },
+                { firstName: "John", lastName: "doe" },
+            ]
+
+            for (d in data) {
+                var tr = document.createElement("tr");
+                var firstName = document.createElement("td");
+                firstName.innerHTML = data[d].firstName;
+                var lastName = document.createElement("td");
+                lastName.innerHTML = data[d].lastName;
+                tr.appendChild(firstName);
+                tr.appendChild(lastName);
+                emp.appendChild(tr);
+            }
+            }
+        }
+
+
+        var addRow = function() {
+            var emp = document.getElementById("emp");
+            var tr = document.createElement("tr");
+            var firstName = document.createElement("td");
+            firstName.innerHTML = document.getElementById("firstName").value;
+            var lastName = document.createElement("td");
+            lastName.innerHTML = document.getElementById("lastName").value;
+            tr.appendChild(firstName);
+            tr.appendChild(lastName);
+            emp.appendChild(tr);
+            document.getElementById("firstName").value = "";
+            document.getElementById("lastName").value = "";
+            document.getElementById("firstName").focus();
+        }
+    </script>
+</head>
+
+<body>
+
+    <label>First Name : </label>
+    <input type="text" id="firstName" /><br>
+    <label>Last Name : </label>
+    <input type="text" id="lastName" /><br>
+    <button id="addBtn">Save</button>
+
+    <table id="emp">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </table>
+
+</body>
+
+</html>

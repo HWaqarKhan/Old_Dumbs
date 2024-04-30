@@ -1,0 +1,15 @@
+<app-contact></app-contact>
+<!-- (addTask)="(onCreate($event))" -->
+
+<!-- *ngFor="let task of tasks" [task]="task" 
+(deleteTask)="(onDelete(task))"
+(toggleTask)="(onReminder(task))" -->
+
+<div class="task" *ngFor="let contact of contacts" (dblclick)="(onReminder(contact))">
+    <h3>{{contact.name}} <fa-icon [icon]="timeIcon" (click)="(onDelete(contact))" ></fa-icon>
+    </h3>
+    <p>{{contact.email}}</p>
+    <div *ngFor="let num of contact.number">
+        <p><span>{{num.Type}} <strong> : </strong></span>{{num.number}}</p>
+    </div>
+</div>

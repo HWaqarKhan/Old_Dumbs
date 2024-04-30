@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsApp.NewsDetails">
+    <Grid RowDefinitions="Auto,Auto,*" Padding="20">
+    <StackLayout Margin="10">
+        <Label 
+            Text="X"  
+            HorizontalOptions="Start"  Margin="10" Padding="10" FontSize="30">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer x:Name="Back" Tapped="Back_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+    </StackLayout>
+        <Image Grid.Row="0" x:Name="ImgFruit" HeightRequest="500" />
+        <Label Grid.Row="1" x:Name="fruitName" FontSize="Title"/>
+        <Label Grid.Row="2" x:Name="fruitSen" FontSize="Caption"/>
+    </Grid>
+</ContentPage>

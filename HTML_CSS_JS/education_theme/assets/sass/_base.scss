@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,500&family=Open+Sans&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    color: $white-color;
+    background: url("../img/bg-texture.png");
+    background-color: $bg-primary-color;
+
+    .container {
+        width: $container-lg;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 1024px) {
+        .container {
+            width: $container-md;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.2rem;
+        }
+        h2 {
+            font-size: 1.7rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+        }
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            width: $container-sm;
+        }
+    }
+}
+section {
+    padding: 6rem 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+a {
+    color: $white-color;
+}
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.btn {
+    display: inline-block;
+    background-color: $white-color;
+    color: $black-color;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        background-color: transparent !important;
+        color: $white-color !important;
+        border-color: $white-color !important;
+    }
+}
+.btn-primary {
+    background-color: $danger-color;
+    color: $white-color;
+}
+// .hide {
+//     display: none;
+// }

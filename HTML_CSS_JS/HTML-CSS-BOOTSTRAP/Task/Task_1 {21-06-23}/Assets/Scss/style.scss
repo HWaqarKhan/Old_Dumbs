@@ -1,0 +1,32 @@
+$Desert: #d6b161;
+$source_sans: "Source Sans Pro", sans-serif;
+$white: #fff;
+$black: black;
+
+.massive {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: none;
+    font-family: $source_sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: $white;
+    &__link{
+        &:hover {
+            color: $Desert;
+        }
+    }
+    &__logo{
+        height: 100px;
+    }
+}
+.active {
+	color: $Desert !important;
+}
+.vr {
+	align-self: auto !important;
+	background-color: $black !important;
+	opacity: 1 !important;
+	min-height: 1.5em !important;
+}

@@ -1,0 +1,68 @@
+.about {
+    margin-top: 3rem;
+    @media screen and (max-width: 1024px) {
+        margin-top: 2rem !important;
+        &__achievements {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            gap: 4rem !important;
+
+            &-left {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__achievements {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        &--right {
+            padding: 0 5px 0 5px;
+            p {
+                margin: 1.6rem 0 2.5rem;
+            }
+
+            .achievements {
+                &__cards {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1.5rem;
+
+                    @media screen and (max-width: 600px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    @media screen and (max-width: 400px) {
+                        grid-template-columns: 1fr;
+                    }
+                }
+
+                &__card {
+                    background-color: $bg-secondary-color;
+                    padding: 1.6rem;
+                    border-radius: 1rem;
+                    text-align: center;
+                    transition: $transition;
+                    &:hover {
+                        background-color: $bg-tertiary-color;
+                        box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+                    }
+                    &:nth-child(2) {
+                        .achievements__icon {
+                            background-color: #00bf8e;
+                        }
+                    }
+                }
+
+                &__icon {
+                    background-color: $danger-color;
+                    padding: 0.6rem;
+                    border-radius: 1rem;
+                    display: inline-block;
+                    margin-bottom: 2rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fee Payment Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-card">
+                    <div class="card-header">
+                        Fee Payment Form
+                    </div>
+                    <div class="card-body">
+                        <form id="fee-payment-form">
+                            <div class="mb-3">
+                                <label for="student-name" class="form-label">Student Name:</label>
+                                <input type="text" class="form-control" id="student-name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="payment-mode" class="form-label">Payment Mode:</label>
+                                <select class="form-select" id="payment-mode" onchange="updateLateFee()">
+                                    <option value="cash">Cash</option>
+                                    <option value="cheque">Cheque</option>
+                                    <option value="online">Online</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">Amount:</label>
+                                <input type="number" class="form-control" id="amount" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="due-date" class="form-label">Due Date:</label>
+                                <input type="date" class="form-control" id="due-date" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" onclick="payFee()">Pay</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="payment-details" class="receipt-card" style="display: none;">
+                    <div class="card-header">
+                        Payment Details
+                    </div>
+                    <div class="card-body">
+                        <p><strong>User Name:</strong> <span id="user-name"></span></p>
+                        <p><strong>Current Date:</strong> <span id="current-date"></span></p>
+                        <p><strong>Due Date:</strong> <span id="display-due-date"></span></p>
+                        <p><strong>Amount:</strong> $<span id="amount-display"></span></p>
+                        <p class="late-fee" id="late-fee-amount" style="display: none;"><strong>Late
+                                Fee:</strong> $<span id="late-fee"></span></p>
+                        <p class="late-fee-message" id="late-fee-message" style="display: none;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

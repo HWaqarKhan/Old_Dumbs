@@ -1,0 +1,73 @@
+﻿@model BasicECommerce.Model.ProductViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<form asp-action="AddOrEdit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Product.Id" />
+    <input type="hidden" asp-for="Product.ImageUrl" />
+    <div class="border p-3 mt-4">
+        <div class="row pb-3">
+            <h2 class="text-primary">@((Model.Product== null || Model.Product.Id==0)?"Create":"Update") Product</h2>
+            <hr />
+        </div>
+        @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+        <div class="row mb-3 form-group">
+            <label asp-for="Product.Name" class="control-label"></label>
+            <input asp-for="Product.Name" class="form-control" />
+            <span asp-validation-for="Product.Name" class="text-danger"></span> @*Display Server Side Validation Error*@
+        </div>
+        <div class="row mb-3 form-group">
+            <label asp-for="Product.Description" class="control-label"></label>
+            <textarea asp-for="Product.Description" class="form-control"></textarea>
+            <span asp-validation-for="Product.Description" class="text-danger"></span>
+        </div>
+        <div class="row mb-3 form-group">
+            <label asp-for="Product.Price" class="control-label"></label>
+            <input asp-for="Product.Price" class="form-control" />
+            <span asp-validation-for="Product.Price" class="text-danger"></span>
+        </div>
+        <div class="row mb-3 form-group">
+            <label asp-for="Product.ImageUrl"></label>
+            <input  type="file" id="ImageFile" name="file" class="form-select"/>
+        </div>
+        <div class="row mb-3 form-group">
+            <label asp-for="Product.CategoryId" class="control-label"></label>
+            <select asp-for="Product.CategoryId" asp-items="@Model.Category" class="form-control">
+                <option selected>---Select Category---</option>
+            </select>
+            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            @if (@Model.Product == null || Model.Product.Id == 0) {
+                <button type="submit" onclick="return validateEmpty()" value="Save" class="btn btn-primary">Save</button>
+
+            } else {
+                <button type="submit" value="Update" class="btn btn-primary">Update</button>
+
+            }
+            <button asp-controller="Category" asp-action="Index" class="btn btn-secondary">Back</button>
+        </div>
+    </div>
+</form>
+
+@*Client Side Validation*@
+@section scripts{
+    @{
+    <partial name="_validationScriptsPartial" />
+    }
+<script>
+    function validateEmpty(){
+        if(document.getElementById("#ImageFile").value==""){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Uplaod Image!',
+           });return false;}
+        return true;
+    }
+    tinymce.init({
+        selector: '#mytextarea'
+      });
+</script>
+}

@@ -1,0 +1,15 @@
+{
+  "name": "education_theme",
+  "version": "1.0.0",
+  "description": "Education Institute Dynamic Theme ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w assets/sass/main.scss assets/css/style.css"
+  },
+  "author": "Waqar Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

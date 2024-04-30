@@ -1,0 +1,25 @@
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal"
+                                   ItemSpacing="20" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Grid.Row="4"
+                          RowDefinitions="Auto,Auto,Auto">
+
+                        <Image Grid.Row="0"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Start"
+                               HeightRequest="50"
+                               WidthRequest="50" />
+                        <Label Grid.Row="1"
+                               FontSize="Large"
+                               HorizontalOptions="Center" />
+                        <Label Grid.Row="2"
+                               FontSize="Small"
+                               HorizontalOptions="Center" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        

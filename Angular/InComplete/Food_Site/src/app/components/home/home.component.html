@@ -1,0 +1,32 @@
+
+<app-search></app-search>
+<app-tags></app-tags>
+<app-notfound
+[visible]="!foods || !foods.length"
+resetLinkText="Reset Search">
+</app-notfound>
+<div class="container">
+    <div class="row d-flex align-items-center justify-content-center align-content-center">
+        <div class="col-4 mt-2" *ngFor="let food of foods" >
+            <div class="card " style="border-radius: 1rem;" routerLink="food/{{food.id}}">
+                <!-- <a routerLink="food/{{food.id}}"></a> -->
+                <img src="{{food.imageUrl}}" class="img-fluid card-img-top" alt="..." width="50px">
+                <div class="card-title ms-2 mt-1">
+                    <span class="fs-3">{{food.name}}</span>
+                    <span class=" favorite {{food.favorite?'':'not'}}">❤</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-text small">{{food.description | slice:0:40}}...</p>
+                    <p class="card-text">
+                        <star-rating [value]="food.rating" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                            size="24px" [readonly]="true"></star-rating>
+                    </p>
+                    <p class="card-text fs-5 mb-2"> <strong>Price: </strong> {{food.price |currency}}</p>
+                    <span class="card-text" *ngFor="let origin of food.origins">
+                        <span class="ms-1 p-1 bg-light rounded-2 border"> {{origin}} </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
